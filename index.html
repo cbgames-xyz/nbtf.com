@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyrowh Applied Sciences Corporation</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed; /* Replace URL with your desired background */
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #005f73; /* Deep Teal Color */
+      padding: 10px 20px;
+      width: 100%; /* Full width of the viewport */
+      position: fixed; /* Keep the top bar fixed at the top */
+      top: 0;
+      z-index: 1000;
+    }
+
+    .top-bar img {
+      width: 50px;
+      cursor: pointer;
+    }
+
+    .top-bar a {
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+
+    .top-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Coming Soon Section */
+    .coming-soon {
+      margin-top: auto; /* Pushes the "Coming Soon" text to the bottom */
+      text-align: right;
+      padding: 20px;
+      position: relative;
+      z-index: 1; /* Ensures it's above the background */
+    }
+
+    .coming-soon h1 {
+      font-size: 50px;
+      font-family: 'Amasis MT Pro Black', sans-serif;
+      color: #4096ee; /* Blue color for text */
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <a href="https://example.com"> <!-- Replace with your logo destination -->
+      <img src="https://res.cloudinary.com/diehyknwd/image/upload/v1732357378/h2_GdlpH_400x400-removebg-preview_xjizx0.png" alt="Logo">
+    </a>
+    <div>
+      <a href="https://cbgames-xyz.vercel.app">WebDeveloper</a>
+      <a href="./index.html">Home</a>  |
+      <a href="https://nbtf.fandom.com/wiki/Pyrowh_Corporation">Pyrowh Corporation</a>
+      <a href="./nbtf/index.html">NBTF</a>
+      <a href="https://www.roblox.com/communities/12507282/Pyrowh#!/about">Group</a>
+      <a href="https://devforum.roblox.com/t/nuclear-blast-testing-facility-update-log/1224395">Updates</a>
+      <a href="https://discord.gg/nbtf">Discord</a>
+    </div>
+  </div>
+
+  <!-- Coming Soon Text -->
+  <div class="coming-soon">
+    <h1>COMING SOON!</h1>
+  </div>
+</body>
+</html>
