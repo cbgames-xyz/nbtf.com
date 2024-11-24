@@ -19,10 +19,10 @@ app.get('/', (req, res) => {
 
 // Handle Login
 app.post('/login', (req, res) => {
-  const { handle, password } = req.body;
+  const { email, password } = req.body;
 
   // Check if user exists
-  const user = users.find(user => user.handle === handle);
+  const user = users.find(user => user.email === email);
 
   if (user) {
     // Check password
