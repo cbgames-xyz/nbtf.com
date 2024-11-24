@@ -1,20 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: url('https://res.cloudinary.com/diehyknwd/image/upload/v1732356874/noFilter-ezgif.com-webp-to-jpg-converter_1_buwa4p.jpg') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover; /* Ensure the image covers the entire viewport */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center;    /* Centers the container vertically */
     height: 100vh;          /* Full viewport height */
   }
   
   .login-container {
-    background: white;
-    padding: 20px 30px; /* Adds some horizontal padding for symmetry */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for symmetry */
-    width: 350px; /* Ensures a consistent width */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
   }
   
@@ -25,18 +26,18 @@ body {
   
   .form-group {
     margin-bottom: 15px;
-    text-align: left; /* Aligns labels and inputs for symmetry */
+    text-align: left;
   }
   
   label {
     font-weight: bold;
     display: block;
-    margin-bottom: 5px; /* Spacing between label and input */
+    margin-bottom: 5px;
   }
   
   input {
     width: 100%;
-    padding: 10px; /* Symmetrical padding inside the input */
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -48,7 +49,7 @@ body {
     border: none;
     padding: 10px;
     width: 100%;
-    border-radius: 5px; /* Consistent border radius */
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
   }
@@ -59,7 +60,7 @@ body {
   
   @media (max-width: 400px) {
     .login-container {
-      width: 90%; /* Adjust width on smaller screens */
+      width: 90%;
       padding: 15px;
     }
   }
