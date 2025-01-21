@@ -1,1 +1,78 @@
-coming soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take your Pick</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f3f3f3, #e0e0e0);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background: black;
+      color: white;
+      padding: 10px;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      gap: 20px;
+    }
+    .option {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .option:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+    .facility {
+      background: #e6f3ff;
+      border: 4px solid #4a90e2;
+    }
+    .rebels {
+      background: #ffe6e6;
+      border: 4px solid #e24a4a;
+    }
+    .option img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .option span {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
+      background: black;
+      padding: 5px 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Side</h1>
+  <div class="container">
+    <div class="option facility" onclick="location.href='./workers/index.html'">
+      <img src="https://via.placeholder.com/100?text=Facility" alt="Facility Icon">
+      <span>Workers Database</span>
+    </div>
+    <div class="option rebels" onclick="location.href='./coreos/index.html'">
+      <img src="https://via.placeholder.com/100?text=Rebels" alt="Rebels Icon">
+      <span>Core Operating System</span>
+    </div>
+  </div>
+</body>
+</html>
